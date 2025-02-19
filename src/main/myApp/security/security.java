@@ -10,10 +10,10 @@ public class security extends JFrame{
 
         //conversion of path
         String imagePath = System.getProperty("user.dir");
-        String imagePathConverted = imagePath.replace("\\","/");
+        imagePath = imagePath.replace("\\","/");
 
         //images/main.resources.logo part
-        ImageIcon image = new ImageIcon(imagePathConverted + "/src/main/resources/logo/logo.png");
+        ImageIcon image = new ImageIcon( imagePath + "/src/main/resources/logo/logo.png");
         this.setIconImage(image.getImage());
         this.getContentPane().setBackground(new Color(245,240,240));
 
