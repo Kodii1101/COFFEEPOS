@@ -1,5 +1,6 @@
+package main.myApp;
 
-import init.accountlog;
+import main.myApp.security.accountlog;
 
 import javax.swing.JLabel;
 
@@ -12,9 +13,6 @@ public class Main {
 
         accountlog logIn = new accountlog();
         logIn.add(label);
-
-
-
 
     }
 }
