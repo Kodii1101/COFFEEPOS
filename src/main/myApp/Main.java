@@ -1,18 +1,18 @@
+//current package location
 package main.myApp;
 
-import main.myApp.security.security;
+//import local packages
+import main.myApp.view.loginForm;
 
-import javax.swing.JLabel;
+//import external packages
+
 
 public class Main {
     public static void main(String[] args) {
 
         //CALL LOG-IN
-        JLabel label = new JLabel();
-        label.setText("Are you sureeeee?");
+         new loginForm().setVisible(true);
 
-        security logIn = new security();
-        logIn.add(label);
 
     }
 }
