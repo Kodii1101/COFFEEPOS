@@ -1,6 +1,6 @@
 package main.myApp;
 
-import main.myApp.security.accountlog;
+import main.myApp.security.security;
 
 import javax.swing.JLabel;
 
@@ -11,7 +11,7 @@ public class Main {
         JLabel label = new JLabel();
         label.setText("Are you sureeeee?");
 
-        accountlog logIn = new accountlog();
+        security logIn = new security();
         logIn.add(label);
 
     }

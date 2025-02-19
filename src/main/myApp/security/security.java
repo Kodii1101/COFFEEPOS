@@ -4,9 +4,9 @@ import javax.swing.JFrame;
 import javax.swing.ImageIcon;
 import java.awt.*;
 
-public class accountlog extends JFrame{
+public class security extends JFrame{
 
-    public accountlog() {
+    public security() {
 
         //conversion of path
         String imagePath = System.getProperty("user.dir");
