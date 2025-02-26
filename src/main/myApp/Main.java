@@ -13,8 +13,8 @@ public class Main {
         //CALL LOG-IN
          new loginForm().setVisible(true);
 
-         idgen gen1 = new idgen(5000);
-         idgen gen2 = new idgen(5000);
+         idgen gen1 = new idgen(800);
+         idgen gen2 = new idgen(800);
 
         System.out.println("User ID 1: " + gen1.generateUserID());
         System.out.println("User ID 2: " + gen2.generateUserID());

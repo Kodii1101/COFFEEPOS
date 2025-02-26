@@ -8,16 +8,28 @@ import java.util.Random;
 
 public class idgen {
 
-    private Random random;
+    private int seed;
 
     // Constructor with a seed (for reproducibility)
-    public idgen(long seed) {
-        this.random = new Random(seed);
-        System.out.println("Sulod kos idgen 1 :" + this.random);
-        System.out.println("Sulod kos idgen 2 :" + this.random);
+    public idgen(int seed) {
+        this.seed = seed;
+        System.out.println("Sulod kos idgen 1 :" + this.seed);
+
     }
 
     public String generateUserID() {
+        String userID;
+        seed += 0x6D2B79F5;
+        int t = seed;
+        t = (t ^ (t >>> 15)) * (1 | t);
+        t = (t ^ (t >>> 7)) * (61 | t);
+        //System.out.println("sulod kos genUsID :" + seed + t);
+        return String.valueOf(((t ^ (t >>> 14)) >>> 0) / 4294967296.0f);
+    }
+
+}
+
+/* public String generateUserID() {
         System.out.println("sulod kos genUsID :" + this.random);
         String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
         StringBuilder userID = new StringBuilder();
@@ -27,7 +39,4 @@ public class idgen {
             System.out.println(userID);
         }
         return userID.toString();
-    }
-
-}
-
+    }*/
