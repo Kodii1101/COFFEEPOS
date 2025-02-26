@@ -23,7 +23,7 @@ public class loginForm extends JFrame {
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
         setLocationRelativeTo(null);
-        setLayout(new GridLayout(3, 2, 50, 10));
+        setLayout(new GridLayout(3, 10, 5, 5));
 
         //conversion of path
         String imagePath = System.getProperty("user.dir");
@@ -33,6 +33,7 @@ public class loginForm extends JFrame {
         ImageIcon image = new ImageIcon( imagePath + "/src/main/resources/logo/logo.png");
         setIconImage(image.getImage());
         getContentPane().setBackground(new Color(245,240,240));
+
 
 
         //UI components
@@ -46,10 +47,11 @@ public class loginForm extends JFrame {
         add(passwordField);
         //buttons
         loginButton = new JButton("Login");
+        System.out.println(loginButton.getColorModel());
+        loginButton.setBackground(new Color(100, 105, 190 ));
         cancelButton = new JButton("Cancel");
         add(loginButton);
         add(cancelButton);
-
     }
 /*
     public String getUsername() {
