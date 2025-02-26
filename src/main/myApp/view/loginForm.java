@@ -36,6 +36,7 @@ public class loginForm extends JFrame {
 
 
 
+
         //UI components
         //username
         add(new JLabel("Username :"));
@@ -47,7 +48,6 @@ public class loginForm extends JFrame {
         add(passwordField);
         //buttons
         loginButton = new JButton("Login");
-        System.out.println(loginButton.getColorModel());
         loginButton.setBackground(new Color(100, 105, 190 ));
         cancelButton = new JButton("Cancel");
         add(loginButton);
