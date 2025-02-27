@@ -3,7 +3,6 @@ package main.myApp.security;
 
 //import local packages
 import java.util.Random;
-
 //import external packages
 
 public class idgen {
